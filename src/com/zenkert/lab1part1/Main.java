@@ -10,36 +10,31 @@ public class Main {
         int argOne = Integer.parseInt(args[0]);
         int argTwo = Integer.parseInt(args[1]);
         System.out.printf("argOne: %d, argTwo: %d\n", argOne, argTwo);
-        int x = 1;
-        for (int i = 1; i <= 15; i++) {
-            System.out.println(LifeLength.iterLifeLength(i) + " : " + LifeLength.iterLifeLength(LifeLength.f1(i)));
-        }
+        int n = 4;
 
-//        int n = 4;
-//
-//        switch (n){
-//            case 1:
-//                taskone(argone);
-//                break;
-//            case 2:
-//                tasktwo(argone);
-//                break;
-//            case 3:
-//                taskthree(argone, argtwo);
-//                break;
-//            case 4:
-//                taskfour(argone);
-//                break;
-//            case 6:
-//                tasksix(argone);
-//                break;
-//            default:
-//                try {
-//                    throw new exception("the value of n is invalid. 1-4, and 6 are valid. ");
-//                } catch (exception e) {
-//                    e.printstacktrace();
-//                }
-//        }
+        switch (n){
+            case 1:
+                taskOne(argOne);
+                break;
+            case 2:
+                taskTwo(argOne);
+                break;
+            case 3:
+                taskThree(argOne, argTwo);
+                break;
+            case 4:
+                taskFour(argOne);
+                break;
+            case 6:
+                taskSix(argOne);
+                break;
+            default:
+                try {
+                    throw new Exception("the value of n is invalid. 1-4, and 6 are valid. ");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+        }
     }
 
     static void taskOne(int arg) {
