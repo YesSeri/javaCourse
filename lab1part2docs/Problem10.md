@@ -28,23 +28,14 @@ The first graph is linear.
 
 ### Question 4
 
-if k == 1 => 1
-if k > 1 => k
+[comment]: <> (if k == 1 => 1)
 
-floor(k) to ceiling(k*2-1) => log2(2k)
-
-floor 8 to ceiling 8*2-1 => log2(2*8)
-
-floor 8 to ceiling 15 => log2(16) = 4
+[comment]: <> (if k > 1 => k)
 
 ```
-for k = 1 => 1
+floor(k) to ceiling(k*2-1) => log2(k) + 1
 
-For k > 1
+floor 8 to ceiling 8*2-1 => log2(8) + 1
 
-for floor(k) ceiling(k + k % (k - k / 2)) => k^2 - 1
-
-floor 2 ceiling 2 + % (2 - 2 / 2) => 2^2 - 1
-
-floor 2 ceiling 3 => 3
+floor 8 to ceiling 15 => 4
 ```

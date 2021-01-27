@@ -10,15 +10,15 @@ public class Main {
         // Task 9
         double x = 1.5;
         for (int k = 1; k <= 15; k++) {
-//            System.out.println(k);
-//            Raise.recRaiseHalf(x, k);
-//            Raise.recRaiseOne(x, k);
-//            System.out.printf("Raise half executed: %d times\nRaise one executed: %d times\n",
-//                    Raise.recHalfCounter, Raise.recOneCounter);
-//            Raise.recHalfCounter = 0;
-//            Raise.recOneCounter = 0;
+            System.out.println(k);
+            Raise.recRaiseHalf(x, k);
+            Raise.recRaiseOne(x, k);
+            System.out.printf("Raise half executed: %d times\nRaise one executed: %d times\n",
+                    Raise.recHalfCounter, Raise.recOneCounter);
+            Raise.recHalfCounter = 0;
+            Raise.recOneCounter = 0;
         }
-        createDataForGraph();
+//        createDataForGraph();
     }
 
 

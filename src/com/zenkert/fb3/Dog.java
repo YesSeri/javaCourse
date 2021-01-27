@@ -1,19 +1,25 @@
 package com.zenkert.fb3;
 
 /**
- * This is a class for dogs
- * @author Henrik Zenkert
+ *
+ * This class creates a dog of the race breed.
+ *
+ * @author Kalle Anka
  *
  */
 
 public class Dog {
     /**
-     * This method lets the dog sleep
-     * @param time
-     *  This is the amount of time the dog sleeps
+     * The constructor creates a dog of the race breed, the fur color color, and of a certain age.
+     * @param breed
+     *  This is the race of the dog
+     * @param color
+     *  This is the color of the dog
+     * @param age
+     *  This is the age of the dog
      */
+    public Dog(String breed, String color, int age) {/* code omitted */}
     public void sleep(int time) {
-        /* code omitted */
     }
 }
 
