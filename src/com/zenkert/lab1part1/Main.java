@@ -10,7 +10,7 @@ public class Main {
         int argOne = Integer.parseInt(args[0]);
         int argTwo = Integer.parseInt(args[1]);
         System.out.printf("argOne: %d, argTwo: %d\n", argOne, argTwo);
-        int n = 4;
+        int n = 6;
 
         switch (n){
             case 1:
@@ -54,7 +54,17 @@ public class Main {
     }
 
     static void taskThree(int argOne, int argTwo) {
-        System.out.printf("f%d=%d\n", argTwo, LifeLength.iterateF(argOne, argTwo));
+
+        int a0 = 3; int n = 5;
+        System.out.printf("a0=%d, f%d=%d\n",a0, n, LifeLength.iterateF(a0, n));
+
+        a0=1; n=3;
+        System.out.printf("a0=%d, f%d=%d\n",a0, n, LifeLength.iterateF(a0, n));
+
+        a0=42; n=3;
+        System.out.printf("a0=%d, f%d=%d\n",a0, n, LifeLength.iterateF(a0, n));
+
+//        System.out.printf("f%d=%d\n", argTwo, LifeLength.iterateF(argOne, argTwo));
     }
 
     static void taskFour(int arg) {

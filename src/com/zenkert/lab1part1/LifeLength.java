@@ -31,10 +31,11 @@ public class LifeLength {
     }
 
     public static int iterateF(int a0, int n) {
+        int x = a0;
         for (int i = 0; i < n; i++) {
-            a0 = f1(a0);
+            x = f1(x);
         }
-        return a0;
+        return x;
     }
 
     public static int iterLifeLength(int a0) {
@@ -49,7 +50,7 @@ public class LifeLength {
 
     public static int recLifeLength(int a0) {
         if (a0 == 1) {
-        	return 0;
+            return 0;
         }
         return 1 + recLifeLength(f1(a0));
     }
